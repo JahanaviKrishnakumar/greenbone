@@ -19,3 +19,6 @@ add_executable(${PROJECT}
 target_include_directories(${PROJECT} PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/inc
  )
+ target_link_libraries(${PROJECT} PRIVATE 
+    PkgConfig::GVM_UTIL)
+
