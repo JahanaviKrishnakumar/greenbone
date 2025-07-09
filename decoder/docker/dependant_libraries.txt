@@ -22,3 +22,4 @@ libssh-dev
 libxml2-dev
 pkg-config
 uuid-dev
+libgtest-dev

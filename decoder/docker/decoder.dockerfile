@@ -22,9 +22,10 @@ RUN ldconfig
 # Copy your C source code into the image
 
 COPY ./CMakeLists.txt      /decoder/CMakeLists.txt
+COPY ./inc                 /decoder/inc
 COPY ./src                 /decoder/src
 COPY ./test                /decoder/test
-COPY ./test/config         /decoder/test/config
+# COPY ./test/config         /decoder/test/config
 
 
 WORKDIR /decoder
@@ -35,4 +36,5 @@ RUN mkdir build && cd build && \
     cmake .. && make -j$(nproc)
 
 # Run bash by default (can be changed later to ./decoder-app)
-CMD ["./build/decoder"]
+CMD ["/decoder/build/decoder"]
+
