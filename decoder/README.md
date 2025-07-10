@@ -33,7 +33,7 @@ docker compose build --no-cache
 To run the decoder and decoder-test 
 
 ```bash
-docker compose run decoder
+docker compose up  --force-recreate
 ```
 
 To stop and remove all containers
