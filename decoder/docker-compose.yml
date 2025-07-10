@@ -1,0 +1,11 @@
+services:
+  decoder:
+    platform: linux/amd64 
+    build:
+      context: .
+      dockerfile: docker/decoder.dockerfile
+    container_name: decoder
+    working_dir: /decoder/build
+    entrypoint: /bin/bash
+    command: -c "./decoder && echo '\n--- Running tests ---\n' && ./decoder-test"
+
