@@ -3,8 +3,13 @@
 This project builds and runs a C/C++ decoder application along with unit tests using Docker and Docker Compose.
 
 ---
+## Assumpitions
 
+The assumption on decoder function is that the decoder runs as a separate process and it fails, likely due to communication issues or a problem with decoder process itself.
 
+The solution is written based on this assumption.
+
+Looking at the decoder, it seems to be implementing ROT13. Other decoding methods usually add  special characters or numbers in the output, but here, the first two decoded messages and from the third message onward we see eondided messages which are free from, hex codes, or special characters. This strongly points that the decoding function used is ROT13. 
 
 ## Prerequisites
 
