@@ -9,7 +9,7 @@ The assumption on decoder function is that the decoder runs as a separate proces
 
 The solution is written based on this assumption.
 
-Looking at the decoder, it seems to be implementing ROT13. Other decoding methods usually add  special characters or numbers in the output, but here, the first two decoded messages and from the third message onward we see eondided messages which are free from, hex codes, or special characters. This strongly points that the decoding function used is ROT13. 
+Looking at the decoder, it seems to be implementing ROT13. Other decoding methods usually add  special characters or numbers in the output, but here, the first two decoded messages and from the third message onward we see encoded messages which are free from, hex codes, or special characters. This strongly points that the decoding function used is ROT13. 
 
 ## Prerequisites
 
