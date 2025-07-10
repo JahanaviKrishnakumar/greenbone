@@ -51,8 +51,8 @@ docker compose down --remove-orphans
 ### Result 
 decoder and decoder test output should look like this 
 
-![Decoder ](decoder.png)
+![Decoder ](https://github.com/JahanaviKrishnakumar/greenbone/blob/main/decoder/decoder.png)
 
 Decoder test
 
-![Decoder ](decoder-test.png)
+![Decoder ](https://github.com/JahanaviKrishnakumar/greenbone/blob/main/decoder/decoder-test.png)
