@@ -23,7 +23,7 @@ Looking at the decoder, it seems to be implementing ROT13. Other decoding method
  Cloning this repository to your local machine
 
 ```bash
-git clone https://github.com/yourusername/decoder.git
+git clone https://github.com/JahanaviKrishnakumar/greenbone.git
 cd decoder
 ```
 
